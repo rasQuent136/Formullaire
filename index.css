@@ -1,0 +1,129 @@
+body {
+    padding-top: 5%;
+    padding-left: 15%;
+    background-color: cornsilk;
+}
+
+.formEnregistrement {
+    background-image: radial-gradient(circle,#00FFFF,#40E0D0,#7FFF00,#00FF00,#ffd700,#dc143c);
+    border: groove 8px #2F4F4F;
+    width: 800px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50px;
+    
+
+}
+.écart {
+    padding-top: 5%;
+}
+
+.total {
+    border: inset 5px #2F4F4F;
+    width: 850px;
+    height: 600px;
+    border-radius: 5%;
+    background-image: repeating-linear-gradient(#EEE8AA,#B0C4DE,#5F9EA0,#9370DB);
+}
+
+.validation {
+    text-align: center;
+}
+ 
+
+h1{
+    margin-left: 70px;
+    font-family: fantasy;
+    font-style: oblique;
+    font-size: 32px;
+  
+}
+
+body h1 {
+    color: rgba(34, 34, 34, 0.596) !important;
+    text-align: center;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+form ul li label {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+form ul li input, select, span {
+    float: left;
+    margin-bottom: 10px;
+}
+[type="submit"] {
+    clear: both;
+    margin: 20px 0 0 230px;
+    font-size: 18px;
+}
+
+[type="reset"] {
+    clear: both;
+    margin: 20px 0 0 230px;
+    font-size: 18px;
+}
+
+p {
+    margin-left: 70px;
+    font-weight: bold;
+}
+
+.form_col {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 3px 0px;
+    width: 200px;
+    min-height: 1px;
+    text-align: right;
+}
+
+input {
+	padding: 2px;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	outline: none; /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
+}
+
+input:focus {
+	border-color: rgba(82, 168, 236, 0.75);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.tooltip {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 2px 4px;
+	border: 1px solid #555;
+	background-color: #CCC;
+	border-radius: 8px;
+}
+
+.correct {
+    border-color: chartreuse;
+}
+
+.correct:focus {
+    border-color: chartreuse;
+    box-shadow: 0 0 8px darkgrey;
+}
+
+.incorrect {
+    border-color: red ;
+}
+
+.incorrect:focus {
+    border-color: red ;
+    box-shadow: 0 0 8px darkred;
+}

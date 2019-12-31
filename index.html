@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>formulaire d'inscription</title>
+        <meta name="keywords" content="Javascript from validation, Sample registration form">
+        <meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+        <link rel="stylesheet" href="index.css">
+        <script src="main.js"></script>     
+    </head>
+    <body onload="document.enregistrement.nomUtils.focus();">
+        <div class="formEnregistrement">
+        <h1>Formulaire d'enregistrement :</h1>
+        <br /><br />
+        </div>
+            <div class="écart"></div>
+            <div class="total">
+            <form method="POST" name="enregistrement" onSubmit="return desactivateTooltips(this);" onblur="desactivateTooltips(this)" novalidate>
+
+                <ul>
+                    <li><label for="nomUtils">Pseudo</label></li>
+                    <li><input type="text" name="nomUtils" id="nomUtils" size="14" onblur="desactivateTooltips(this)" onblur="nomUtils(this)" required></li>
+                    <li><span class="tooltip">Nom d'utilisateur déjà utilisé !</span></li>
+                    <br /><br />
+
+                    <li><label for="nom">Nom</label></li>
+                    <li><input type="text" name="nom" id="nom" size="14" onblur="nomPrenom(this)" required></li>
+                    <li><span class="tooltip">Votre nom doit comportez au moins 2 caractères !</span></li>
+                    <br /><br />
+
+                    <li><label for="prénom">Prénom</label></li>
+                    <li><input type="text" name="prénom" id="prénom" size="14" onblur="nomPrenom(this)" required></li>
+                    <li><span class="tooltip">Votre prénom doit comportez au moins 2 caractères !</span></li>
+                    <br /><br />
+
+                    <li><label for="dateNais">Date de naissance</label></li>
+                    <li><input type="date" name="dateNais" id="dateNais" size="14" required></li>
+                    <li><span class="tooltip">Entrez un date de naissance valide !</span></li>
+                    <br /><br />
+
+                    <li><label for="adrrMail">Adresse mail</label></li>
+                    <li><input type="email" name="adrrMail" id="adrrMail" size="14" onblur="addMail(this)" required></li>
+                    <li><span class="tooltip">Entrez un mail valide !</span></li>
+                    <br /><br />
+
+                    <li><label for="mdp">Entrez votre mot de passe</label></li>
+                    <li><input type="password" name="mdp" id="mdp" size="14" onblur="mdp(this)" required></li>
+                    <li><span class="tooltip">Votre mot de passe doit comportez au moins 7 caractères,<br/> un chiffre et un caractères spéciaux !</span></li> 
+                    <br /><br />
+
+                    <li><label for="confMdp">Confirmation</label></li>
+                    <li><input type="password" name="confMdp" id="confMdp" size="14" onblur="confMdp(this)" required></li>
+                    <li><span class="tooltip">Vos mots de passe doivent être identique ! </span></li>
+                    <br /><br />
+
+                    <li><label id="genre">Sex:</label></li>
+                    <li><input type="radio" name="hsex sex" onblur="check(sex)" value="Homme" /><span>Homme</span></li>
+                    <li><input type="radio" name="fsex sex" onblur="check(sex)" value="Femme" /><span>Femme</span></li>
+                    <li><input type="radio" name="autre sex" onblur="check(sex)" value="Autre" /><span>Autre</span></li>
+                    <br /><br />
+                    <li><span class="tooltip">Vous devez sélectionnez votre sexe !</span></li>
+                    <br /><br />
+
+                    <div id="confirmation_majorité">
+                    <li><span class="form_col"></span></li>
+                    <li><label><input type="checkbox" name="news" id="news" onblur="confMaj(this)" required>Vous confirmez avoir 18 ans !</label></li>
+                    <li><span class="tooltip" aria-live="polite">Vous devez être majeur !</span></li>
+                    <br /><br />
+
+                    </div>
+                    <div class="validation">
+                    <li><span class="form_col"></span></li>
+                    <li><input type="submit" name="submit" value="M'inscrire"></li>
+                    <li><input type="reset" name="submit" value="Réinitialiser le formulaire"></li>
+                    </div>
+                </ul>
+            </form>
+            </div>
+    </body>
+</html>
